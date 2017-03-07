@@ -1,0 +1,23 @@
+warning: for p.o. reduction to be valid the never claim must be stutter-invariant
+(never claims generated from LTL formulae are stutter-invariant)
+pan: claim violated! (at depth 189)
+pan: wrote election.pml.trail
+(Spin Version 4.2.6 -- 27 October 2005)
+Warning: Search not completed
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 332 byte, depth reached 189, errors: 1
+      95 states, stored
+       0 states, matched
+      95 transitions (= stored+matched)
+       0 atomic steps
+hash conflicts: 0 (resolved)
+
+4.879 	memory usage (Mbyte)
+

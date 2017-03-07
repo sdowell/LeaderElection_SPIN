@@ -1,0 +1,44 @@
+warning: for p.o. reduction to be valid the never claim must be stutter-invariant
+(never claims generated from LTL formulae are stutter-invariant)
+(Spin Version 4.2.6 -- 27 October 2005)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 332 byte, depth reached 122, errors: 0
+    1340 states, stored (2680 visited)
+    3358 states, matched
+    6038 transitions (= visited+matched)
+       0 atomic steps
+hash conflicts: 6 (resolved)
+
+5.289 	memory usage (Mbyte)
+
+unreached in proctype process1
+	line 26, state 3, "iters_exceeded = 1"
+	line 32, state 10, "message_exceeded = 1"
+	line 44, state 24, "single_leader = 0"
+	line 43, state 26, "((numleaders>1))"
+	line 43, state 26, "else"
+	line 48, state 29, "highest_leader = 0"
+	line 59, state 45, "message_exceeded = 1"
+	line 67, state 52, "numleaders = (numleaders+1)"
+	line 66, state 54, "((leader!=id))"
+	line 66, state 54, "else"
+	line 70, state 56, "leader = id"
+	line 70, state 57, "elected_leader = 1"
+	line 72, state 59, "single_leader = 0"
+	line 71, state 61, "((numleaders>1))"
+	line 71, state 61, "else"
+	line 76, state 64, "highest_leader = 0"
+	line 112, state 88, "single_leader = 0"
+	line 116, state 93, "highest_leader = 0"
+	line 125, state 103, "message_exceeded = 1"
+	line 129, state 108, "-end-"
+	(17 of 108 states)
+unreached in proctype :init:
+	(0 of 4 states)

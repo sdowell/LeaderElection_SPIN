@@ -1,0 +1,52 @@
+warning: for p.o. reduction to be valid the never claim must be stutter-invariant
+(never claims generated from LTL formulae are stutter-invariant)
+error: max search depth too small
+(Spin Version 4.2.6 -- 27 October 2005)
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 332 byte, depth reached 9999, errors: 0
+   45800 states, stored
+   47145 states, matched
+   92945 transitions (= stored+matched)
+       0 atomic steps
+hash conflicts: 1318 (resolved)
+
+Stats on memory usage (in Megabytes):
+15.755	equivalent memory usage for states (stored*(State-vector + overhead))
+15.689	actual memory usage for states (compression: 99.58%)
+	State-vector as stored = 331 byte + 12 byte overhead
+4.194 	memory used for hash table (-w19)
+0.480 	memory used for DFS stack (-m10000)
+0.233 	other (proc and chan stacks)
+0.124 	memory lost to fragmentation
+20.239	total actual memory usage
+
+unreached in proctype process1
+	line 32, state 10, "message_exceeded = 1"
+	line 44, state 24, "single_leader = 0"
+	line 43, state 26, "((numleaders>1))"
+	line 43, state 26, "else"
+	line 48, state 29, "highest_leader = 0"
+	line 59, state 45, "message_exceeded = 1"
+	line 67, state 52, "numleaders = (numleaders+1)"
+	line 66, state 54, "((leader!=id))"
+	line 66, state 54, "else"
+	line 70, state 56, "leader = id"
+	line 70, state 57, "elected_leader = 1"
+	line 72, state 59, "single_leader = 0"
+	line 71, state 61, "((numleaders>1))"
+	line 71, state 61, "else"
+	line 76, state 64, "highest_leader = 0"
+	line 112, state 88, "single_leader = 0"
+	line 116, state 93, "highest_leader = 0"
+	line 125, state 103, "message_exceeded = 1"
+	line 129, state 108, "-end-"
+	(16 of 108 states)
+unreached in proctype :init:
+	(0 of 4 states)
